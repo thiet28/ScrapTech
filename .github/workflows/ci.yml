@@ -33,7 +33,7 @@ jobs:
 
       # ── 3. Cài dependencies ─────────────────────────────────────────────────
       - name: Install dependencies
-        run: npm ci
+        run: npm install --legacy-peer-deps
 
       # ── 4. Chạy Jest + sinh coverage report (lcov) ──────────────────────────
       - name: Run Jest with coverage
